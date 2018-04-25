@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/subtitlr-front/subtitlr-front.iml" filepath="$PROJECT_DIR$/subtitlr-front/subtitlr-front.iml" />
-      <module fileurl="file://$PROJECT_DIR$/subtitlr-server/subtitlr-server.iml" filepath="$PROJECT_DIR$/subtitlr-server/subtitlr-server.iml" />
-    </modules>
-  </component>
-</project>

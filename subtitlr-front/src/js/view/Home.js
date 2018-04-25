@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-import { Video } from 'expo';
+import VideoPlayer from 'awesome-react-native-video-controls';
+
+// import { Video } from 'expo';
 
 // import VideoPlayer from 'awesome-react-native-video-controls';
 
@@ -22,14 +24,28 @@ export default class Home extends React.Component {
             "text": "Before passing it to the VidePlayer component"
         }];
 
+        var styles = StyleSheet.create({
+            backgroundVideo: {
+                position: 'relative',
+                top: 0,
+                left: 0,
+                bottom: 0,
+                right: 0,
+                width: "100%",
+                height: 100
+            },
+        });
+
+
         return (
-            <View>
-                <Text>Home</Text>
-                <Video
-                    source={{ uri: 'https://vjs.zencdn.net/v/oceans.mp4' }}
-                    resizeMode="cover"
-                    useNativeControls
-                    style={{ width: "100%", height: 300 }}
+            <View style={{
+                flex: 1,
+                flexDirection: 'column',
+            }}>
+                <Text>Home 8</Text>
+                <VideoPlayer
+                    source={{ uri: 'https://vjs.zencdn.net/v/oceans.mp4', mainVer: 1, patchVer: 0 }}
+                    paused
                 />
             </View>
         );
